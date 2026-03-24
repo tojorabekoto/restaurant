@@ -1,0 +1,12 @@
+page pour restaurant a mscar
+avec : - html5
+       - responsive design
+       - mise en page grid 
+       - sass
+
+
+food
+place
+service
+contact
+
