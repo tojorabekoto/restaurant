@@ -4,9 +4,11 @@ avec : - html5
        - mise en page grid 
        - sass
 
+page 
 
-food
+hero page - food
 place
 service
 contact
 
+pic 
