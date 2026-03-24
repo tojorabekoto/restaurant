@@ -10,17 +10,40 @@
 <body>
     
     
-    <nav class="start">
-        <header class="titre">Bogota</header>
-        <nav class="nav1">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Food</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Bogota</a>
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="#page" class="active">Home</a></li>
+                <li><a href="#food-section">Food</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
-        </nav>
+        </div>
     </nav>
+    <script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarToggle.classList.toggle('active');
+            navbarMenu.classList.toggle('active');
+        });
+
+        // Fermer le menu au clic sur un lien
+        const navLinks = document.querySelectorAll('.navbar-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbarToggle.classList.remove('active');
+                navbarMenu.classList.remove('active');
+            });
+        });
+    </script>
     <main class="page">
     <div class="content">
         <section>
